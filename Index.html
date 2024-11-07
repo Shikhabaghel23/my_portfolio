@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      /* color: #333; */
+      /* color: #0ef; */
+      color: #fff;
+      /* background-color: #f9f9f9; */
+      background-color: #1f242d;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 35px;
+      background-color: #1f242d;
+      color: #fff;
+      text-align: center;
+      /* padding: 1em 0; */
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      /* font-size: 22px;
+      font-weight: 600; */
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    nav a:hover{
+      color: #0ef;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2em;
+    }
+
+    .Intro {
+        display: flex;
+        font-size: 18px;
+        /* padding: 1rem; */
+    }
+
+    .name {
+      color: #0ef;
+    }
+
+    .section-title {
+      text-align: center;
+      margin: 1.5em 0;
+      color: #444;
+    }
+    .about, .projects, .contact {
+      padding: 1em 0;
+    }
+    /* About section */
+    .about p {
+      line-height: 1.6;
+    }
+    /* Projects section */
+    .projects-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5em;
+      justify-content: center;
+    }
+    .project-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 1em;
+      width: 300px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .project-card h3 {
+      margin-top: 0;
+    }
+    .project-card a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    /* Contact section */
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .contact input, .contact textarea {
+      padding: 0.8em;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .contact button {
+      background-color: #3498db;
+      color: #fff;
+      padding: 0.8em;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skill">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+
+    <section class="Intro">
+        <div class="web-intro">
+            <h3 class="self-intro">Hello!</h3>
+            <h2>I'm <span class="name">Shikha baghel</span></h2>
+            <p>Hello! I'm a passionate web developer with a knack for creating elegant and functional designs. 
+             With skills in HTML, CSS, and JavaScript, I love bringing ideas to life on the web. 
+             I want to learn new skills. Welcome to my portfolio!</p>
+        </div>
+        <div class="web-img">
+            <img src="./img/WhatsApp Image 2024-10-29 at 2.39.10 PM.jpeg" alt="image" height="410px" width="300px">
+        </div>
+      </section>
+    
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2 class="section-title">About Me</h2>
+      <div>
+        <img src="./img/WhatsApp Image 2024-10-29 at 2.40.46 PM.jpeg" alt="img">
+      </div>
+      <div>
+        <p>My name is Shikha baghel. I am from Agra Uttar Pradesh. I am currently staying in Pune, Maharashtra.
+         I have completed my graduation in 2024. Now I am doing a Diploma of web developar. </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <h3>Project One</h3>
+          <p>A short description of the project goes here.</p>
+          <a href="#">View Project</a>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card">
+          <h3>Project Two</h3>
+          <p>A short description of the project goes here.</p>
+          <a href="#">View Project</a>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card">
+          <h3>Project Three</h3>
+          <p>A short description of the project goes here.</p>
+          <a href="#">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2 class="section-title">Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Your Name. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
